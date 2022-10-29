@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Quiziac</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_signup_with">Or Signup with</string>
+    <string name="quiziac">Quiziac</string>
+    <string name="already_have_account_sign_up">Already have account? Sign Up</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? Sign Up</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_log_in">Name</string>
+    <string name="home">Home</string>
+    <string name="rank">Rank</string>
+    <string name="starque">StarQue</string>
+    <string name="profile">Profile</string>
+    <string name="todo">TODO</string>
+    <string name="this_app_name_is_quiziac">This app name is Quiziac</string>
+    <string name="finish">Finish</string>
+    <string name="back">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">Setting</string>
+    <string name="leader_board">Leader Board</string>
+    <string name="pdf_file_name">PDF file name</string>
+    <string name="question_bank">Question Bank</string>
+    <string name="quiziac_notes">Quiziac notes</string>
+    <string name="youtube_video_link">Youtube Video Link</string>
+    <string name="tutorial_videos_link">Tutorial Videos Link</string>
+    <string name="i_love_quiziac">I Love Quiziac</string>
+    <string name="email_address">email address</string>
+    <string name="edit_profile"><![CDATA[Edit Profile >]]></string>
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="about_us">About Us</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="log_out">Log out</string>
+    <string name="heading">This quiziac is the best way to improve your knowledge...</string>
+    <string name="intro">The quiziac is meant to be fun of quiz. The registration of the quiziac application is preety much simple and quicker and the User Interface is also kept simple.</string>
+    <string name="quick_and_simple">Quick and Simple:</string>
+    <string name="relogin">Already have an account, Login</string>
+    <string name="reset_password">RESET PASSWORD</string>
+</resources>

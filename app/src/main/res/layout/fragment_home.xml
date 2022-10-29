@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/homebg">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/ic_wave__9_"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/peacemaker_personal_use_regular"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

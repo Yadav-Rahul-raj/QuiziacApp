@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup_activity"
+    android:background="@color/homebg">
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_120sdp"-->
+<!--        android:background="@drawable/ic_wave__9_"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="175dp"-->
+<!--            android:layout_marginStart="@dimen/_7sdp"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/peacemaker_personal_use_regular"-->
+<!--            android:text="@string/app_name"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/_20sdp" />-->
+<!--    </RelativeLayout>-->
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:backgroundColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:translationZ="@dimen/_75sdp"/>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
