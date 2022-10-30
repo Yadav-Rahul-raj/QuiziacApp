@@ -33,27 +33,24 @@ public class Signup_activity extends AppCompatActivity {
 
         checkConnection(); //check internet connection
 
-        binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public boolean onItemSelect(int i) {
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                switch (i)
-                {
-                    case 0:
-                        transaction.replace(R.id.content,new HomeFragment());
-                        transaction.commit();
-                        break;
-                    case 1:
-                        transaction.replace(R.id.content,new LeaderboardsFragment());
-                        transaction.commit();
-                        break;
-                    case 2:
-                        transaction.replace(R.id.content,new ProfileFragment());
-                        transaction.commit();
-                        break;
-                }
-                return false;
+        binding.bottomBar.setOnItemSelectedListener((OnItemSelectedListener) i -> {
+            FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
+            switch (i)
+            {
+                case 0:
+                    transaction1.replace(R.id.content,new HomeFragment());
+                    transaction1.commit();
+                    break;
+                case 1:
+                    transaction1.replace(R.id.content,new LeaderboardsFragment());
+                    transaction1.commit();
+                    break;
+                case 2:
+                    transaction1.replace(R.id.content,new ProfileFragment());
+                    transaction1.commit();
+                    break;
             }
+            return false;
         });
     }
     public void checkConnection(){
