@@ -1,20 +1,15 @@
 package com.example.quiziac;
 
-import androidx.annotation.Nullable;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.GridLayoutManager;
-
-import android.os.Bundle;
 
 import com.example.quiziac.databinding.ActivitySignupBinding;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
 
 import me.ibrahimsn.lib.OnItemSelectedListener;
 
@@ -35,6 +30,8 @@ public class Signup_activity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.content,new HomeFragment());
         transaction.commit();
+
+        checkConnection(); //check internet connection
 
         binding.bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
@@ -58,5 +55,11 @@ public class Signup_activity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    public void checkConnection(){
+        ConnectivityManager manager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
+        if(null==activeNetwork)
+                Toast.makeText(this, "No Internet Connection", Toast.LENGTH_SHORT).show();
     }
 }
