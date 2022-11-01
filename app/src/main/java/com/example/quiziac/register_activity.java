@@ -82,10 +82,7 @@ public class register_activity extends AppCompatActivity {
                             if(task.isSuccessful())
                            {
                                String uid = task.getResult().getUser().getUid();
-                               database
-                                       .collection("users")
-                                        .document(uid)
-                                                .set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                               database.collection("users").document(uid).set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                            @Override
                                            public void onComplete(@NonNull Task<Void> task) {
                                                if(task.isSuccessful())
